@@ -1,5 +1,5 @@
 {
-  "name": "Gig.Angular.Project.Template.Beta1",
+  "name": "Angular.Project.Template.Beta1",
   "version": "0.0.0",
   "author": {
     "name": "Masoud Bimar",
@@ -9,7 +9,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run Gig.Angular.Project.Template.Beta1:server:dev",
+    "build:ssr": "ng run Angular.Project.Template.Beta1:server:dev",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

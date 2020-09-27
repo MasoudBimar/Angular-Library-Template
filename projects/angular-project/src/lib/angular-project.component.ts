@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'gig-AngularProject',
+  selector: 'app-AngularProject',
   template: `
     <p>
       angular-project works!
