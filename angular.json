@@ -178,6 +178,76 @@
           }
         }
       }
+    },
+    "AppCore": {
+      "root": "projects/app-core",
+      "sourceRoot": "projects/app-core/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/app-core/tsconfig.lib.json",
+            "project": "projects/app-core/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/app-core/src/test.ts",
+            "tsConfig": "projects/app-core/tsconfig.spec.json",
+            "karmaConfig": "projects/app-core/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/app-core/tsconfig.lib.json",
+              "projects/app-core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "AppSecurity": {
+      "root": "projects/app-security",
+      "sourceRoot": "projects/app-security/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/app-security/tsconfig.lib.json",
+            "project": "projects/app-security/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/app-security/src/test.ts",
+            "tsConfig": "projects/app-security/tsconfig.spec.json",
+            "karmaConfig": "projects/app-security/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/app-security/tsconfig.lib.json",
+              "projects/app-security/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "Angular.Project.Template.Beta1"

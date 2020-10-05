@@ -23,8 +23,24 @@
       "angular-project/*": [
         "dist/angular-project/*"
       ],
-	  "core-js/es7/reflect": ["node_modules/core-js/proposals/reflect-metadata"],
-      "core-js/es6/*": ["node_modules/core-js/es/*"]
+      "core-js/es7/reflect": [
+        "node_modules/core-js/proposals/reflect-metadata"
+      ],
+      "core-js/es6/*": [
+        "node_modules/core-js/es/*"
+      ],
+      "app-core": [
+        "dist/app-core"
+      ],
+      "app-core/*": [
+        "dist/app-core/*"
+      ],
+      "app-security": [
+        "dist/app-security"
+      ],
+      "app-security/*": [
+        "dist/app-security/*"
+      ]
     }
   }
 }

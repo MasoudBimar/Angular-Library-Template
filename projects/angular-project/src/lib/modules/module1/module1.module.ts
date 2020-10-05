@@ -1,5 +1,6 @@
 ﻿import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { AppCoreModule } from 'app-core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    AppCoreModule
   ],
   exports: [OrderlistComponent],
   entryComponents: [] // important
